@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./solution/normalize.css"/>
+    <link rel="stylesheet" href="./solution/stylee.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <div class="header">
+        <div class="header__logo">
+          <img
+            src="./images/logo.svg"
+            class="img-logo"
+            alt="A logo image for main page"
+          />
+        </div>
+      </div>
+
+      <div class="conatiner">
+        <div class="conatiner__left">
+          <p class="conatiner__left-title">Bill</p>
+          <div class="conatiner__left-form">
+            <img
+              src="./images/icon-dollar.svg"
+              alt="a dollar icon"
+              class="conatiner__from-icon"
+            />
+            <form action="#" class="conatiner__form">
+              <input
+                type="text"
+                class="conatiner__form-input-bill"
+                placeholder="0"
+              />
+            </form>
+          </div>
+          <p class="conatiner__left-title title-tip">Select Tip %</p>
+          <div class="conatiner__button">
+            <button class="btn-tip">5%</button>
+            <button class="btn-tip">10%</button>
+            <button class="btn-tip">15%</button>
+            <button class="btn-tip">25%</button>
+            <button class="btn-tip">50%</button>
+            <input type="text" class="btn-custom" placeholder="custom" />
+          </div>
+          <div class="container__numopeople">
+            <p class="conatiner__left-title-Num">Number of People</p>
+          </div>
+          <div class="conatiner__left-form">
+            <img
+              src="./images/icon-person.svg"
+              alt="a person icon"
+              class="conatiner__from-icon"
+            />
+            <form action="#">
+              <input
+                type="text"
+                class="conatiner__form-input-people"
+                placeholder="0"
+              />
+            </form>
+          </div>
+        </div>
+        <!-- right side -->
+        <div class="container__right">
+          <div class="conatiner__right-content">
+            <div class="conatiner__price tip-amount">
+              <div class="total-tip-person">
+                <p class="conatiner__price__title__tip">Tip Amount</p>
+                <span class="person-tip">/ person</span>
+              </div>
+              <h2 class="conatiner__price__total">
+                $<span class="tip-amount-el">0.00</span>
+              </h2>
+            </div>
+            <div class="conatiner__price total-amount">
+              <div class="total__tip-person">
+                <p class="conatiner__price__title__tip">Total</p>
+                <span class="person-tip">/ person</span>
+              </div>
+              <h2 class="conatiner__price__total">
+                $<span class="total-amount-el">0.00</span>
+              </h2>
+            </div>
+          </div>
+
+          <div class="container__right-button">
+            <button class="container__right-btn">RESET</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./solution/app.js"></script>
+  </body>
+</html>
